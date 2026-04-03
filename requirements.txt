@@ -1,0 +1,11 @@
+torch --index-url https://download.pytorch.org/whl/cu126
+langchain
+langchain-text-splitters
+langchain-community
+pypdf
+chromadb
+langchain-chroma
+langchain-huggingface
+langchain-openai
+sentence-transformers
+chainlit
