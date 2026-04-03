@@ -2,7 +2,7 @@
 
 An end-to-end Retrieval-Augmented Generation (RAG) system designed to parse, index, and query complex financial reports. 
 
-This project demonstrates the implementation of an LLM architecture using the following tools:
+This project is for practicing purposes and demonstrates the implementation of an LLM architecture using the following tools:
 * **Language:** Python 3.10+
 * **Orchestration:** LangChain (LCEL)
 * **LLM Engine:** OpenAI API (`gpt-3.5-turbo`)
@@ -23,7 +23,7 @@ This system utilizes a two-tier architecture to ensure modularity and scalabilit
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/your-username/your-repo-name.git)
+git clone [https://github.com/your-username/your-repo-name.git](https://github.com/danielstrenger/Financial-Document-Rag.git)
 cd your-repo-name
 ```
 ### 2. Create a Virtual Environment (Recommended)
