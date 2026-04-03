@@ -23,7 +23,7 @@ This system utilizes a two-tier architecture to ensure modularity and scalabilit
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/your-username/your-repo-name.git](https://github.com/danielstrenger/Financial-Document-Rag.git)
+git clone https://github.com/danielstrenger/Financial-Document-Rag.git
 cd your-repo-name
 ```
 ### 2. Create a Virtual Environment (Recommended)
