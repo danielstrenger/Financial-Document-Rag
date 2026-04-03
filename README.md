@@ -12,7 +12,7 @@ This project is for practicing purposes and demonstrates the implementation of a
 
 ## System Architecture
 
-This system utilizes a two-tier architecture to ensure modularity and scalability:
+This system utilizes a two-tier architecture:
 
 1. **The Ingestion Pipeline (`ingest.py`):** A backend ETL script that utilizes LangChain to parse raw PDF financial documents. It implements `RecursiveCharacterTextSplitter` for semantic chunking and utilizes local HuggingFace embeddings (`all-MiniLM-L6-v2`) to project text into a high-dimensional vector space. The vectors are persisted locally using **ChromaDB**.
 2. **The Application Interface (`app.py`):** An asynchronous React-based chat application built with **Chainlit**. It operates as a read-only client to the vector database. The underlying reasoning engine uses **LangChain Expression Language (LCEL)** to explicitly separate retrieval logic from prompt formatting and LLM generation, streaming tokens directly to the UI for a highly responsive user experience.
