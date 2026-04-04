@@ -1,9 +1,8 @@
 # Financial Document RAG Assistant
 
-An end-to-end Retrieval-Augmented Generation (RAG) system designed to parse, index, and query complex financial reports. 
+An end-to-end Retrieval-Augmented Generation (RAG) system designed to parse, index, and query financial reports in PDF format. 
 
-This project is for practicing purposes and demonstrates the implementation of an LLM architecture using the following tools:
-* **Language:** Python 3.10+
+This is a practicing project to explore the architecture of RAG systems and especially the following tools:
 * **Orchestration:** LangChain (LCEL)
 * **LLM Engine:** OpenAI API (`gpt-3.5-turbo`)
 * **Embeddings:** HuggingFace (`all-MiniLM-L6-v2`)
@@ -15,7 +14,7 @@ This project is for practicing purposes and demonstrates the implementation of a
 This system utilizes a two-tier architecture:
 
 1. **The Ingestion Pipeline (`ingest.py`):** A backend ETL script that utilizes LangChain to parse raw PDF financial documents. It implements `RecursiveCharacterTextSplitter` for semantic chunking and utilizes local HuggingFace embeddings (`all-MiniLM-L6-v2`) to project text into a high-dimensional vector space. The vectors are persisted locally using **ChromaDB**.
-2. **The Application Interface (`app.py`):** An asynchronous React-based chat application built with **Chainlit**. It operates as a read-only client to the vector database. The underlying reasoning engine uses **LangChain Expression Language (LCEL)** to explicitly separate retrieval logic from prompt formatting and LLM generation, streaming tokens directly to the UI for a highly responsive user experience.
+2. **The Application Interface (`app.py`):** A React-based chat application built with **Chainlit**. It operates as a read-only client to the vector database. The underlying reasoning engine uses **LangChain Expression Language (LCEL)** to explicitly separate retrieval logic from prompt formatting and LLM generation, streaming tokens directly to the UI for a highly responsive user experience.
 
 ---
 
